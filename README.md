@@ -10,10 +10,10 @@
 <br>
 
 <H2>Questions:</H2>
-	<p><b>Question 1: Does average household income affect the quality of schools?<b><p>
-	<p><b>Question 2: Bottom versus Top household income grade score average<b><p>
-	<p><b>Question 3: Bottom versus Top household income prices<b><p>
-	<p><b>Question 4: Bottom versus top average grade scores by city<b><p>
+	<p><b>Question 1</b>: Does average household income affect the quality of schools?<p>
+	<p><b>Question 2</b>: Bottom versus Top household income grade score average<p>
+	<p><b>Question 3</b>: Bottom versus Top household income prices<p>
+	<p><b>Question 4</b>: Bottom versus top average grade scores by city<p>
 		
 <br>
 
