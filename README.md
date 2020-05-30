@@ -12,10 +12,8 @@
 <H2>How to run the project:</H2>
   <p><b>Step 1.</b> Git pull the project into your working directory</p>
   <p><b>Step 2.</b> Take the config.py in data/config.py and add your db_username and db_password, save it and put that in the root directory</p>
-  <p><b>Step 3.</b> Create etl_project_db database in Postgres</p>
-  <p><b>Step 4.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
-  <p><b>Step 5.</b> Create etl_project_db database in Postgres</p>
-  <p><b>Step 5.</b> Execute database queries found in etl_database_queries.sql</p>
+  <p><b>Step 3.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
+  <p><b>Step 4.</b> Execute database queries found in etl_database_queries.sql</p>
 
 
 <br>
