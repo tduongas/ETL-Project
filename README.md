@@ -9,11 +9,24 @@
 
 <br>
 
+<H2>Questions:</H2>
+	<p><b>Question 1: Does average household income affect the quality of schools?<b><p>
+	<p><b>Question 2: Bottom versus Top household income grade score average<b><p>
+	<p><b>Question 3: Bottom versus Top household income prices<b><p>
+	<p><b>Question 4: Bottom versus top average grade scores by city<b><p>
+		
+<br>
+
 <H2>How to run the project:</H2>
-  <p><b>Step 1.</b> Git pull the project into your working directory</p>
-  <p><b>Step 2.</b> Take the config.py in data/config.py and add your db_username and db_password, save it and put that in the root directory</p>
-  <p><b>Step 3.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
-  <p><b>Step 4.</b> Execute database queries found in etl_database_queries.sql</p>
+  	<p><b>Step 1.</b> Git pull the project into your working directory</p>
+  	<p><b>Step 2.</b> Take the config.py in data/config.py and add your db_username and db_password, save it and put that in the root directory</p>
+  	<p><b>Step 3.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
+  	<p><b>Step 4.</b> Execute database queries found in etl_database_queries.sql</p>
+
+<br>
+
+<H2>ETL Process:</H2>
+
 
 
 <br>
