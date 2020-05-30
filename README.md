@@ -1,6 +1,6 @@
 <H1>UCF Data Vizualization - ETL Project</H1>
 
-<p>Project demostrates the team's ability to extract Census, School Grade and Zillow Housing Value Index datasets, transform that data using pandas dataframes/fuctions and then load the cleaned dataframes into three separate database tables. We decided to use a relational database in Postgres to load our data.</p>
+<p>Project demostrates the team's ability to extract Census, School Grade and Zillow Housing Value Index datasets, transform that data using pandas dataframes/fuctions and then load the cleaned dataframes into three separate database tables. We decided to use a relational database in Postgres to load our data. Relational database made more sense since the datasets were from three separate sources sharing the same primary key (zip_code). This enabled us to easily join datasets from each of the three tables.</p>
 <p>There were some adjustments in SQL we made to help with school grade scores because the grade letters (A, B, C, etc) could not be used in aggregate SQL function.</p>
 
 <br>
