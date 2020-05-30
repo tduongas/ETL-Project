@@ -1,7 +1,7 @@
 <H1>UCF Data Vizualization - ETL Project</H1>
 
-<p>Project demostrates the team's ability to extract Census, School Grade and Zillow Housing Value Index datasets, transform that data using pandas dataframes/fuctions and then load the cleaned dataframes into three separate database tables. We decided to use a relational database in Postgres to load our data. Relational database made more sense since the datasets were from three separate sources sharing the same primary key (zip_code). This enabled us to easily join datasets from each of the three tables.</p>
-<p>There were some adjustments in SQL we made to help with school grade scores because the grade letters (A, B, C, etc) could not be used in aggregate SQL function.</p>
+<p>This project demostrates the team's ability to extract Census, School Grade and Zillow House Value Index (zhvi) datasets, transform that data using pandas dataframes/fuctions and then load the cleaned dataframes into three separate database tables. We decided to use a relational database in Postgres to load our data. Relational database made more sense since the datasets were from three separate sources sharing the same primary key (zip_code). This enabled us to easily join datasets from each of the three tables.</p>
+<p>There were some adjustments done in SQL to help with school grade scores because the grade letters (A, B, C, etc) could not be used in aggregate SQL function.</p>
 
 <br>
 <H2>Team Members:</H2>
@@ -10,25 +10,40 @@
 <br>
 
 <H2>Questions:</H2>
+	<ul>
 	<p><b>Question 1</b>: Does average household income affect the quality of schools?<p>
 	<p><b>Question 2</b>: Bottom versus Top household income grade score average<p>
 	<p><b>Question 3</b>: Bottom versus Top household income prices<p>
 	<p><b>Question 4</b>: Bottom versus top average grade scores by city<p>
-		
+	</ul>	
 <br>
 
 <H2>How to run the project:</H2>
-  	<p><b>Step 1.</b> Git pull the project into your working directory</p>
+  	<ul>
+	<p><b>Step 1.</b> Git pull the project into your working directory</p>
   	<p><b>Step 2.</b> Take the config.py in data/config.py and add your db_username and db_password, save it and put that in the root directory</p>
   	<p><b>Step 3.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
   	<p><b>Step 4.</b> Execute database queries found in etl_database_queries.sql</p>
+	</ul>
 
 <br>
 
 <H2>ETL Process:</H2>
+	<ul>
+	<p><b>Extract:</b> We used the datasets from our Project 1. We had CSV datasets for census data, school grades and zillow house value index. Using SQLAlchemy and Pandas we extracted columns from our CSV datasets specfically for 2017. This included, household income, school grades and house prices by zip code to name a few.</p>
+	<p><b>Transform:</b> Additional columns were required for average, min and max for zhvi and rates for census data. We cleaned the data to only use 2017 data and making the column names follow the lowercase/underscore format.</p>
+	<p><b>Load:</b> After cleaning up the census data, school grades and zhvi and associating these into respective dataframes, we used SQLAlchemy create_engine and db methods to get our dataframes loaded into Postres database tables. Then it was just a matter of experimentin with various SQL queries to answer our questions.</p>
+	</ul>
 
+<br>
 
-
+<H2>Learnings:</H2>
+	<ul>
+		<li>Using config.py and gitignore in a project to not disclose database passwords.</li>		
+		<li>The use of a case statement in SQL to update an additional column.</li>
+		<li>Creating a database using SQLAlchemy db method.</li>
+		<li>Individually working on a dataset and then merging that into the one database.</li>
+	</ul>
 <br>
 <br>
 
