@@ -1,3 +1,9 @@
+-- Query census_data records
+SELECT * FROM census_data;
+
+-- Query zillow_housing_value_index records
+SELECT zip_code, city, "2017_zhvi_avg", "2017_zhvi_max", "2017_zhvi_min" FROM zillow_house_value_index;
+
 -- Query school_grades records
 SELECT * FROM school_grades;
 
@@ -18,6 +24,9 @@ grade_score_2017 = (CASE WHEN grade_2017='A' THEN 6
        				END)
 WHERE zip_code = 32641;
 
+-- View all school grades to check grade_scrore_2017
+SELECT * FROM school_grades;
+
 -- Works so now update all
 UPDATE school_grades SET 
 grade_score_2017 = (CASE WHEN grade_2017='A' THEN 6
@@ -28,8 +37,8 @@ grade_score_2017 = (CASE WHEN grade_2017='A' THEN 6
             			ELSE 1
        				END);
 
--- Query census_data records
-SELECT * FROM census_data;
+-- Query school_grades records
+SELECT * FROM school_grades;
 
 -- Query zillow_house_value_index records
 SELECT * FROM zillow_house_value_index;
@@ -76,7 +85,6 @@ AND cd.zip_code = sg.zip_code
 GROUP BY cd.zip_code, cd.household_income
 ORDER BY cd.household_income ASC LIMIT 100;
 
-
 -- Top household income by zip codes and school grades
 SELECT cd.zip_code, sg.school_name, sg.grade_2017, cd.population, cd.household_income 
 FROM "census_data" cd, "school_grades" sg 
@@ -113,5 +121,7 @@ sg.school_name, sg.grade_2017, sg.grade_score_2017
 FROM "zillow_house_value_index" zhvi, "school_grades" sg 
 WHERE zhvi.zip_code = sg.zip_code 
 ORDER BY "2017_zhvi_avg" ASC;
+
+
 
 
