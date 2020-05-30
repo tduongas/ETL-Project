@@ -1,3 +1,38 @@
+<H1>UCF Data Vizualization - ETL Project</H1>
+
+<p>Project demostrates the team's ability to extract Census, School Grade and Zillow Housing Value Index datasets, transform that data using pandas dataframes/fuctions and then load the cleaned dataframes into three separate database tables. We decided to use a relational database in Postgres to load our data. Relational database made more sense since the datasets were from three separate sources sharing the same primary key (zip_code). This enabled us to easily join datasets from each of the three tables.</p>
+<p>There were some adjustments in SQL we made to help with school grade scores because the grade letters (A, B, C, etc) could not be used in aggregate SQL function.</p>
+
+<br>
+<H2>Team Members:</H2>
+	<p>Dinh Duong, Joe Dahruj and Eduardo Panneflek</p>
+
+<br>
+
+<H2>Questions:</H2>
+	<p><b>Question 1</b>: Does average household income affect the quality of schools?<p>
+	<p><b>Question 2</b>: Bottom versus Top household income grade score average<p>
+	<p><b>Question 3</b>: Bottom versus Top household income prices<p>
+	<p><b>Question 4</b>: Bottom versus top average grade scores by city<p>
+		
+<br>
+
+<H2>How to run the project:</H2>
+  	<p><b>Step 1.</b> Git pull the project into your working directory</p>
+  	<p><b>Step 2.</b> Take the config.py in data/config.py and add your db_username and db_password, save it and put that in the root directory</p>
+  	<p><b>Step 3.</b> Run etl_merged.ipynb to get tables census_data, school_grades and zillow_housing_value_index tables loaded</p>
+  	<p><b>Step 4.</b> Execute database queries found in etl_database_queries.sql</p>
+
+<br>
+
+<H2>ETL Process:</H2>
+
+
+
+<br>
+<br>
+
+
 # Guidelines for ETL Project
 
 This document contains guidelines, requirements, and suggestions for Project 1.
