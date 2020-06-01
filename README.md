@@ -32,7 +32,7 @@
 	<ul>
 	<p><b>Extract:</b> We used the datasets from our Project 1. We had CSV datasets for census data, school grades and zillow house value index. Using SQLAlchemy and Pandas we extracted columns from our CSV datasets specfically for 2017. This included, household income, school grades and house prices by zip code to name a few.</p>
 	<p><b>Transform:</b> Additional columns were required for average, min and max for zhvi and rates for census data. We cleaned the data to only use 2017 data and making the column names follow the lowercase/underscore format.</p>
-	<p><b>Load:</b> After cleaning up the census data, school grades and zhvi and associating these into respective dataframes, we used SQLAlchemy create_engine and db methods to get our dataframes loaded into Postres database tables. Then it was just a matter of experimentin with various SQL queries to answer our questions.</p>
+	<p><b>Load:</b> After cleaning up the census data, school grades and zhvi and associating these into respective dataframes, we used SQLAlchemy create_engine and db methods to get our dataframes loaded into Postres database tables. Then it was just a matter of experimenting with various SQL queries to answer our questions.</p>
 	</ul>
 
 <br>
